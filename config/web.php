@@ -43,8 +43,15 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '<action:(index|login|logout|about|contact)>' => 'site/<action>', /*При обращении к определенному экшену\действию -
-                      обращаться к его контроллеру и экшену  */
+                /*При обращении к определенному экшену\действию - обращаться к его контроллеру и экшену*/
+
+                /*'<action:(index|login|logout|about|contact)>' => 'site/<action>', - Первый способ*/
+
+                /* ''=>'site/index',
+                '<action>'=>'site/<action>', - Второй способ */
+
+
+                '<action:[\w\-]+>'=>'site/<action>', // - Третий способ
             ],
         ],
     ],
