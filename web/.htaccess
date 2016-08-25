@@ -1,0 +1,7 @@
+
+RewriteBase /  #устанавливаем базовый url
+
+RewriteCond %{REQUEST_FILENAME} !-f  #все запросы, которые не идут к реальным файлам
+RewriteCond %{REQUEST_FILENAME} !-d  # и к реальным папкам
+    # перенаправляем на файл index.php
+RewriteRule . index.php
