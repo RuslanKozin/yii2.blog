@@ -1,0 +1,4 @@
+#Данный файл перенаправляет в папку web3
+
+RewriteEngine on
+RewriteRule ^(.+)?$ /web/$1
