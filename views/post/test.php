@@ -1,3 +1,7 @@
 <code><?=__FILE__?></code>
 <br>
-<?= $test ?>
+<?= $hello ?>
+<br>
+<?= $hi ?>
+<br>
+<?= $name ?>
