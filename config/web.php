@@ -54,6 +54,10 @@ $config = [
                 '<action:[\w\-]+>'=>'site/<action>', // - Третий способ
 
                 'post/<id:\d+>' => 'post/view', //красивые адреса постов
+
+                //Правила для пагинации
+                'page/<page:\d+>' => 'post/index',
+                '/' => 'post/index',
             ],
         ],
     ],
