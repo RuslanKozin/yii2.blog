@@ -9,8 +9,8 @@ class PostController extends AppController
 {
     public function actionIndex() //экшн\действие
     {
-        $posts = Post::find()->all() ;
-            //Post:: - объект модели. find - объект запроса. all - выбрать все
+        $posts = Post::find()->select('id, title, excerpt')->all() ;
+            //Post:: - объект модели. find - объект запроса. all - выбрать все. select - выборка
         return $this->render('index', compact('posts'));
     }
 
