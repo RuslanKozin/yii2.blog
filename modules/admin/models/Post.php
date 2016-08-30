@@ -25,7 +25,7 @@ class Post extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public function rules()
+    public function rules()   //Правила для валидации
     {
         return [
             [['title', 'excerpt', 'text'], 'required'],
@@ -37,7 +37,7 @@ class Post extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public function attributeLabels()
+    public function attributeLabels()   //Наименование полей формы
     {
         return [
             'id' => 'ID',
